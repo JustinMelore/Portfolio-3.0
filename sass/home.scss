@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: calc(2vw + 2vh);
+    margin: 0;
+
+    #intro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: calc(15vw + 15vh);
+            border-style: solid;
+            border-width: calc(0.5vw + 0.5vh);
+            border-color: black;
+            border-radius: 300vw;
+        }
+    }
+}
