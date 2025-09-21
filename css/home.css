@@ -62,10 +62,10 @@ body {
   width: 100vw;
   min-height: 100%;
   box-sizing: border-box;
-  margin: calc(2vw + 2vh);
   margin: 0;
 }
-body #intro {
+
+#homepageBody #intro {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -78,25 +78,25 @@ body #intro {
   background-size: cover;
   margin: 0;
 }
-body #intro h1 {
+#homepageBody #intro h1 {
   margin: calc(2vw + 2vh);
   font-size: calc(2vw + 2vh);
 }
-body #intro img {
+#homepageBody #intro img {
   width: calc(15vw + 15vh);
   border-style: solid;
   border-width: calc(0.5vw + 0.5vh);
   border-color: gray;
   border-radius: 300vw;
 }
-body #intro p {
+#homepageBody #intro p {
   width: 70vw;
   font-size: calc(1vw + 1vh);
   text-align: center;
   line-height: calc(1.5vw + 1.5vh);
   margin-bottom: calc(2vw + 2vh);
 }
-body #recentGames {
+#homepageBody #recentGames {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,11 +107,11 @@ body #recentGames {
   border-width: calc(1vw + 1vh);
   border-color: black;
 }
-body #recentGames h1 {
+#homepageBody #recentGames h1 {
   font-size: calc(2.5vw + 2.5vh);
   margin: calc(2vw + 2vh) 0;
 }
-body footer {
+#homepageBody footer {
   display: flex;
   background-color: #141414;
   flex-direction: column;
@@ -119,40 +119,40 @@ body footer {
   color: #dad9d9;
   padding: calc(1vw + 1vh);
 }
-body footer div {
+#homepageBody footer div {
   width: 100%;
   box-sizing: border-box;
   padding: 0 calc(7vw + 7vh);
   justify-content: space-between;
   display: flex;
 }
-body footer div a {
+#homepageBody footer div a {
   color: #dad9d9;
   align-items: center;
   width: 10vw;
   transition: scale 0.25s;
 }
-body footer div a:hover {
+#homepageBody footer div a:hover {
   scale: 1.1;
 }
-body footer h1 {
+#homepageBody footer h1 {
   font-size: calc(2vw + 2vh);
   margin: calc(2vw + 2vh) 0;
 }
-body footer img {
+#homepageBody footer img {
   width: 100%;
   background-color: #dad9d9;
   border-radius: calc(0.75vw + 0.75vh);
   padding: calc(0.5vw + 0.5vh);
 }
-body footer img:hover {
+#homepageBody footer img:hover {
   background-color: white;
 }
-body footer p {
+#homepageBody footer p {
   margin-top: calc(3vw + 3vh);
   font-size: calc(0.8vw + 0.8vh);
 }
-body footer a {
+#homepageBody footer a {
   color: #dad9d9;
   font-size: calc(0.8vw + 0.8vh);
 }/*# sourceMappingURL=home.css.map */
