@@ -119,7 +119,8 @@ body {
         align-items: center;
         padding: calc(1vw + 1vh);
         background-color: $text-color;
-        height: calc(30vw + 30vh);
+        // height: calc(30vw + 30vh);
+        height: fit-content;
         border-style: inset;
         border-width: calc(1vw + 1vh);
         border-color: black;
