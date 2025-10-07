@@ -4,6 +4,7 @@ html {
   min-height: 100vh;
   display: flex;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -15,10 +16,13 @@ nav {
   position: fixed;
   color: #dad9d9;
   width: 100vw;
+  z-index: 1;
 }
 nav a {
   font-size: 5vmin;
   transition: color 0.1s, scale 0.1s;
+  color: #dad9d9;
+  text-decoration: none;
 }
 nav a:hover {
   color: white;
