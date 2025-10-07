@@ -9,6 +9,38 @@ html {
     font-family: sans-serif;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(0.25vw + 0.25vh) calc(1vw + 1vh);
+    box-sizing: border-box;
+    background-color:#141414Af;
+    position: fixed;
+    color: $text-color;
+    width: 100vw;
+
+    a {
+        font-size: 5vmin;
+        transition: color 0.1s, scale 0.1s;
+
+        &:hover {
+            color: white;
+            scale: 1.1;
+        }
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 30vmax;
+
+        a {
+            font-size: 2vmin;
+        }
+    }
+}
+
 .buttonLink {
     padding: calc(1vw + 1vh);
     background-color: #2c9b40;
@@ -74,6 +106,7 @@ body {
     min-height: 100%;
     box-sizing: border-box;
     margin: 0;
+    background-color: $dark-color;
 }
 
 #homepageBody {
