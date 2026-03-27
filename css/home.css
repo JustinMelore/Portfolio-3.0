@@ -287,10 +287,60 @@ body {
   box-sizing: border-box;
   padding: calc(1vw + 1vh);
 }
+.gamePage .gameTechnicalDescription h2 {
+  font-size: calc(1.5vw + 1.5vh);
+}
 .gamePage .gameTechnicalDescription h5 {
   font-size: calc(1vw + 1vh);
   margin: calc(1vw + 1vh);
 }
 .gamePage .gameTechnicalDescription p {
   font-size: calc(1vw + 1vh);
+}
+.gamePage .gameTechnicalDescription iframe {
+  width: 60vw;
+  height: 30vw;
+}
+.gamePage .gameTechnicalDescription li {
+  font-size: calc(1vw + 1vh);
+}
+.gamePage .gameTechnicalDescription figure {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 75%;
+  position: relative;
+}
+.gamePage .gameTechnicalDescription #galleryContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gamePage .gameTechnicalDescription #galleryContainer img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0%;
+  transition: opacity 0.5s;
+  width: 100%;
+}
+.gamePage .gameTechnicalDescription #galleryButtons {
+  display: flex;
+  justify-content: center;
+  margin: calc(1vw + 1vh) 0;
+}
+.gamePage .gameTechnicalDescription #galleryButtons button {
+  height: calc(1.5vw + 1.5vh);
+  width: calc(4.5vw + 4.5vh);
+  background-color: #a1a6a2;
+  border: none;
+  border-radius: 5%;
+  margin: 0 calc(0.5vw + 0.5vh);
+  cursor: pointer;
+}
+.gamePage .gameTechnicalDescription #galleryButtons .selected {
+  background-color: white;
+}
+.gamePage .gameTechnicalDescription figcaption {
+  font-size: calc(1vw + 1vh);
+  text-align: center;
 }/*# sourceMappingURL=home.css.map */
