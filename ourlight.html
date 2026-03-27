@@ -64,24 +64,35 @@
             <ul>
                 <li>Input and player movement</li>
                 <li>Light puzzle mechanics (bridges, fog) and resource system</li>
-                <li>Dynamically sized light cone</li>
+                <li>Dynamically sized light cone via mesh generation</li>
                 <li>Companion w/ unlockable light mode</li>
             </ul>
             <h2>Post-Mortem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt nemo, totam perspiciatis distinctio aliquid commodi, 
-                repudiandae porro nostrum dolor iure magni sapiente recusandae sed delectus id vitae voluptas ut itaque maiores asperiores! 
-                Dignissimos deleniti dolor nisi, excepturi voluptatum earum itaque, ea vero exercitationem sequi dolores adipisci, 
-                repellat repudiandae vitae?</p>
-            <!-- <p>
+            <p>
                 As the sole engineer for this project, I was responsible for designing all of the mechanics and systems that went into the game. By extension,
                 I was also responsible for all of the implementation/coding of those systems and mechanics. Additionally, since most of the remaining members of
                 our team had very little programming experience, it was also my job to ensure that our systems were as easily modifiable and intuitive as possible
                 so as to allow our designers to make any necessary tweaks.
             </p>
             <p>
-                Some of the most notable mechanics I worked on for this project were the player's toggleable cone of light, the puzzle obstacles that 
-                interacted with said light, and the light resource system that depleted or refreshed depending on player actions. 
-            </p> -->
+                Many of the project's strengths came from its relatively simple concept combined with the scalability of its mechanics. As a very simple puzzle 
+                game, it didn't necessitate the creation of many complex systems outside of the individual puzzle mechanics, which made development fairly straightforward.
+                Additionally, use of inheritance allowed for our game's mechanics to be very easily extended for future additions. This meant that much 
+                of the technical work was completed fairly early in the development timeline, which allowed for some extra time dedicated to quality 
+                assurance and concepting for future mechanics.
+            </p>
+            <p>
+                With that being said, our limited development time and the team's inexperience with the Unity game engine meant that the project did run into problems 
+                involving scope. Much of the content that we wanted to include in the final game, including additional puzzle mechanics and NPC companions, had to be 
+                substantially reduced compared to our original vision. UI also ended up being an area of struggle, with various screen size-related bugs popping up throughout
+                 development. 
+            </p>
+            <p>
+                In the future, I will definitely use my experience on this project to get a better sense of scope when planning out features and mechanics so as to not 
+                leave certain parts of the game feeling unfinished. Additionally, I will make sure to place a greater emphasis on separation of concerns when designing scripts, 
+                as there were certain parts of the game's code that needed to be moved to separate scripts later into development as the logic became too complex for its original 
+                location. More effective separation at the beginning of development would have helped reduce this problem and is something I will keep in mind going forward.
+            </p>
         </section>
     </main>
     <script src="./js/gamePage.js"></script>
