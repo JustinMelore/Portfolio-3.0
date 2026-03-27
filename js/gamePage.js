@@ -14,7 +14,9 @@ function resizeBackgrounds() {
 const slides = document.getElementsByClassName("slideshowImage");
 var currentSlide = resetSlides();
 
-//CAROUSEL BACKGROUND CODE
+/**
+ * CAROUSEL BACKGROUND CODE
+ */
 
 /**
  * Resets all of the game page's background slides to the beginning state
@@ -38,10 +40,12 @@ function switchBackground() {
 
 setInterval(switchBackground, 5000)
 
-//GALLERY CODE
+/**
+ * GALLERY CODE
+ */
+
 const galleryImages = document.getElementById("galleryContainer").getElementsByTagName("img");
 var currentImage = initGallery();
-// const galleryButtonList = document.getElementsById("galleryButtons").getElementsByTagName("button");
 
 /**
  * Initializes the gallery by revealing the first image and creating the buttons that correspond to each image
@@ -51,7 +55,7 @@ function initGallery() {
     const galleryButtons = document.getElementById("galleryButtons");
     
     galleryImages[0].style.opacity = "100%";
-    let selectedButton = createGalleryButton();
+    let selectedButton = createGalleryButton(0);
     selectedButton.classList.add("selected");
     galleryButtons.appendChild(selectedButton);
 
@@ -79,10 +83,10 @@ function createGalleryButton(index) {
  * @param {Int} index The index of the image being swapped to
  */
 function switchToImage(index) {
-    //TODO Implement
-    // galleryImages[currentImage].style.opacity = "0%";
-    // galleryButtonList[currentImage].classList.remove("selected");
-    // galleryImages[index].style.opacity = "100%";
-    // galleryButtonList[index].classList.add("selected");
-    // currentImage = index;
+    let galleryButtonList = document.getElementById("galleryButtons").getElementsByTagName("button");
+    galleryImages[currentImage].style.opacity = "0%";
+    galleryButtonList[currentImage].classList.remove("selected");
+    galleryImages[index].style.opacity = "100%";
+    galleryButtonList[index].classList.add("selected");
+    currentImage = index;
 }
