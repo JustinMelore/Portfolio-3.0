@@ -48,15 +48,53 @@
                 an emphasis on timing with a parrying mechanic that can stun enemies and deflect projectiles, as well as a directional dodge which goes through
                 enemy attacks.
             </p>
+            <h2>Gallery</h2>
+            <figure>
+                <div id="galleryContainer">
+                    <img src="./images/wakeOfBetrayalScreenshots/wakeofbetrayalSS1.png" alt="Screenshot 1">
+                    <img src="./images/wakeOfBetrayalScreenshots/wakeofbetrayalSS2.png" alt="Screenshot 2">
+                    <img src="./images/wakeOfBetrayalScreenshots/wakeofbetrayalSS3.png" alt="Screenshot 3">
+                    <img src="./images/wakeOfBetrayalScreenshots/wakeofbetrayalSS4.png" alt="Screenshot 4">
+                </div>
+                <div id="galleryButtons">
+                </div>
+                <figcaption>Click the buttons above to switch images</figcaption>
+            </figure>
+            <h2>Notable Contributions</h2>
+            <ul>
+                <li>Basic player movement and dodging</li>
+                <li>Player combat mechanics (attacking parrying)</li>
+                <li>Ranged enemy and tentacle enemy AI design</li>
+                <li>Ship health system</li>
+                <li>Enemy wave spawning system</li>
+            </ul>
+            <h2>Post-Mortem</h2>
             <p>
-                As one of our team's two engineers, my work was mostly focused on gameplay programming. Player movement and dodging, as well as the player's combat
-                mechanics like attacking and parrying, were all mechanics designed and programmed by me. I also helped plan out the behavior for the game's different
-                enemy types, though implementation mostly rested on the shoulders of our other engineeer.
+                As one of our team's two engineers, my work was mostly focused on gameplay programming and implementing some of the game's core systems, whereas much of
+                the work of AI programming went to the team's other programmer. Compared to my pevious Unity project, this game was much more fast-paced and action heavy,
+                 and as such much of my time was spent iterating on and refining our combat mechanics in order to try and get them feeling as smooth and satisfying as possible. 
             </p>
             <p>
-                Beyond gameplay programming, I also had a hand in designing and implementing other core gameplay systems needed for the game to function. Some notable
-                examples of this would be the ship's health system, our point-based wave system which randomly generated enemy waves, and our enemy spawner which utilized
-                the tiles in our ship's tilemap to create dynamic spawn points rather than relying on set spawn positions.
+                Though the game was developed over the course of six weeks, we were able to maintain a very manageable scope for the project by focusing on the 
+                core gameplay loop early on and keeping levels fairly simple, which allowed the game's replayability to come from the combat and the wave randomization 
+                rather than through large amounts of content. The game's fast-paced melee combat was one of the game's greatest strengths, as it helped make even early 
+                versions of the game feel exciting and difficult. The game's 2D nature also helped simplify certain aspects of development, such as player and enemy movement, 
+                aiming, and level creation, which allowed us to spend more time experimenting with our systems and figuring out new parts of Unity (such as navmeshes and 
+                the animation system) rather than dealing with transformation-based bugs.
+            </p>
+            <p>
+                Despite this simplicity, we did end up running into problems with script dependencies. Many of our independent scripts ended up being very explicitly 
+                coupled with each other in order to work properly, which led to the bloating of script sizes and unnecessary complication. This also ended up causing problems 
+                later on with the debugging process, as there were certain bugs that could seemingly be tied to several different systems and required lots of work isolating 
+                compared to if those systems had less explicit dependencies. Additionally, while we were able to refine our core gameplay loop early on, there were many 
+                quality of life and "game feel" portions of the game that were neglected until later in development, such as sound and menus. This lead to some of those 
+                features being somewhat rushed and incomplete, which impacted our overall game feel.
+            </p>
+            <p>
+                Moving forward, I would steer clear of this project's strict script coupling and create systems that can operate more independently, which will produce 
+                cleaner and more maintainable code. I will also work to create more sophisticated systems for aspects like sound and VFX early on so as to allow thoe areas 
+                to be more well-defined. Aside from those problems, I will also remember the successes we had with our game's combat to create engaging gameplay and player 
+                input on future projects.
             </p>
         </section>
     </main>
