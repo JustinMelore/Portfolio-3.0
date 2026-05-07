@@ -40,7 +40,7 @@
         <section class="gameTechnicalDescription">
             <h5>Platform: Windows</h5>
             <h5>Engine: Unity</h5>
-            <h5>Development Duration: August 2025 - Ongoing</h5>
+            <h5>Development Duration: August 2025 - April 2026</h5>
             <h5>Project Role: Engineer</h5>
             <p>
                 Punk Plush Panic is a chaotic 2.5 platformer in which players swap between 3 characters, using their explosive elemental 
@@ -74,12 +74,36 @@
                 <li>Boss attacks</li>
                 <li>SFX System</li>
             </ul>
+            <h2>Post-Mortem</h2>
             <p>
                 Among the trio of engineers that have been working on this game, my focus has primarily been in gameplay and combat. I was responsible for 
                 implementing the three main characters' different kits, including movement, attacks, and abilities. This responsibility also extended to creating 
                 reusable underlying systems for each of these aspects so that they can be easily repurposed and extended for other areas of the game. Aside from 
                 this main area, I would also fill in for other miscellaneous areas of the game as needed, such as implementing sounds or screen 
                 effects or creating environmental hazards.
+            </p>
+            <p>
+                Since the scale and development time of this game was much greater than the past projects of both myself and the other members of the development 
+                team, a big emphasis was placed on modularity when we were designing our various scripts and mechanics. We felt it would be important for our designers 
+                to be easily able to drag and drop different scripts onto new assets in order to easily create new content with minimal oversight from the engineers. For 
+                some systems, such as our weapon and ability system, this ended up working very well, as we were able to take full advantage of inheritance to easily plug in 
+                whatever new ability or weapon we wanted for the player or a new enemy type. However, for other systems like the behavior of "living" entities (the player and 
+                enemies), this ended up being somewhat detrimental, as it lead to us creating massive, difficult-to-maintain scripts with multitudes of conditional checks in 
+                order to create a "one-size-fits-all" script. These scripts ended up being very difficult to debug and iterate on, especially towards the end of the game's 
+                development.
+            </p>
+            <p>
+                Despite these challenges, we still managed to effectively lay strong foundations for future content additions and systems early on into the project. Additions 
+                like knockback, lifesteal, and new weapon types, which were not originally planned at the beginning of the project, were able to fairly easily be implemented thanks 
+                to the modularity and extendability of systems like our movement queue, weapon system, and elemental reaction systems. This greatly reduced development time during 
+                later stages in the project and allowed us to better respond to more challenging feedback provided by our playtesters. 
+            </p>
+            <p>
+                Looking ahead to future projects, I will definitely be placing a greater emphasis on encapsulation and inheritance based on the difficulties from this game. 
+                Splitting up the codebase into smaller, more specialized pieces will allow myself and other members of the development team to more easily isolate issues and 
+                expand upon specific features without having to navigate through clunky, unorganized scripts. With that being said, there were definitely some systems developed 
+                for this game that will serve as useful templates for future projects. Features like our movement queue, ability and weapon system, and our SFX system will serve 
+                as useful starting places for future projects, particularly ones with an emphasis on movement and character-based gameplay.
             </p>
         </section>
     </main>
